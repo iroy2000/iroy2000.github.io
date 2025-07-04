@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iroy2000 - Full Stack Developer</title>
+    <title>iroy2000 homepage</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
         
@@ -596,71 +596,6 @@ In addition to my technical skills, I'm also passionate about giving back to the
             </div>
         </div>
         
-        <!-- Things I Care About Section -->
-        <div class="terminal-window fade-in">
-            <div class="terminal-header">
-                <div class="terminal-dots">
-                    <div class="dot red"></div>
-                    <div class="dot yellow"></div>
-                    <div class="dot green"></div>
-                </div>
-                <div class="terminal-title">./values --list</div>
-            </div>
-            <div class="terminal-content">
-                <div class="prompt">
-                    <span class="prompt-symbol">❯</span> <span class="command">find . -name "*values*" -exec cat {} \;</span>
-                </div>
-                <div class="care-grid">
-                    <div class="care-item">
-                        <div class="care-icon">🚀</div>
-                        <div class="care-title">Developer Experience</div>
-                        <div class="care-description">
-                            Creating tools and boilerplates that make developers' lives easier and more productive. When developers can focus on solving problems instead of fighting with tooling, amazing things happen.
-                        </div>
-                    </div>
-                    
-                    <div class="care-item">
-                        <div class="care-icon">🎓</div>
-                        <div class="care-title">Knowledge Sharing</div>
-                        <div class="care-description">
-                            Speaking at conferences, writing documentation, and mentoring developers. The tech community grows stronger when we share what we've learned and help others level up.
-                        </div>
-                    </div>
-                    
-                    <div class="care-item">
-                        <div class="care-icon">💡</div>
-                        <div class="care-title">Open Source</div>
-                        <div class="care-description">
-                            Contributing to and maintaining open source projects that benefit the entire developer community. Code should be accessible, well-documented, and built to last.
-                        </div>
-                    </div>
-                    
-                    <div class="care-item">
-                        <div class="care-icon">🔧</div>
-                        <div class="care-title">Clean Architecture</div>
-                        <div class="care-description">
-                            Building scalable, maintainable code that stands the test of time. Good architecture isn't just about today's features—it's about tomorrow's possibilities.
-                        </div>
-                    </div>
-                    
-                    <div class="care-item">
-                        <div class="care-icon">🌱</div>
-                        <div class="care-title">Continuous Learning</div>
-                        <div class="care-description">
-                            Staying curious and adapting to new technologies. The tech landscape evolves rapidly, and the best developers are those who never stop learning and growing.
-                        </div>
-                    </div>
-                    
-                    <div class="care-item">
-                        <div class="care-icon">🤝</div>
-                        <div class="care-title">Team Collaboration</div>
-                        <div class="care-description">
-                            Building great products requires great teamwork. I believe in clear communication, shared ownership, and creating environments where everyone can do their best work.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         
         <!-- Projects Section -->
         <div class="terminal-window fade-in">
@@ -755,164 +690,11 @@ In addition to my technical skills, I'm also passionate about giving back to the
                     <a href="https://github.com/iroy2000" class="project-link">GitHub</a> | 
                     <a href="https://linkedin.com/in/iroy2000" class="project-link">LinkedIn</a>
                 </div>
+		<div class="prompt">
+                    <span class="prompt-symbol">❯</span> <span class="command">echo "This site has no javascript!"</span>
+                </div>
             </div>
         </div>
     </div>
-    
-    <script>
-        // Animated code background
-        const codeSnippets = [
-            "const store = createStore(rootReducer, applyMiddleware(thunk));",
-            "import { useSelector, useDispatch } from 'react-redux';",
-            "const [state, setState] = useState({});",
-            "export default connect(mapStateToProps, mapDispatchToProps)(Component);",
-            "const action = { type: 'INCREMENT', payload: 1 };",
-            "useEffect(() => { fetchData(); }, []);",
-            "const reducer = (state = initialState, action) => {",
-            "return { ...state, [action.type]: action.payload };",
-            "dispatch({ type: 'FETCH_SUCCESS', data });",
-            "const Component = () => <div>Hello React Redux!</div>;",
-            "import { createSlice } from '@reduxjs/toolkit';",
-            "const middleware = store => next => action => {",
-            "if (action.type === 'ASYNC_ACTION') {",
-            "const sagaMiddleware = createSagaMiddleware();",
-            "function* watchFetchData() { yield takeEvery('FETCH_REQUEST', fetchData); }",
-            "const memoizedSelector = createSelector([getItems], items => items.filter(active));",
-            "const ThemeProvider = ({ children }) => <Provider>{children}</Provider>;",
-            "export const { increment, decrement } = counterSlice.actions;",
-            "const persistedReducer = persistReducer(persistConfig, rootReducer);",
-            "const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();"
-        ];
-        
-        function createCodeLine() {
-            const codeLine = document.createElement('div');
-            codeLine.className = 'code-line';
-            codeLine.textContent = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
-            codeLine.style.top = Math.random() * 100 + 'vh';
-            codeLine.style.animationDuration = (Math.random() * 10 + 15) + 's';
-            codeLine.style.animationDelay = Math.random() * 5 + 's';
-            codeLine.style.opacity = Math.random() * 0.3 + 0.05;
-            
-            return codeLine;
-        }
-        
-        function initCodeBackground() {
-            const codeBg = document.getElementById('codeBg');
-            for (let i = 0; i < 15; i++) {
-                codeBg.appendChild(createCodeLine());
-            }
-            
-            // Add new lines periodically
-            setInterval(() => {
-                if (codeBg.children.length < 20) {
-                    codeBg.appendChild(createCodeLine());
-                }
-            }, 2000);
-        }
-        
-        // Matrix background
-        function createMatrixColumn() {
-            const column = document.createElement('div');
-            column.className = 'matrix-column';
-            column.style.left = Math.random() * 100 + 'vw';
-            column.style.animationDuration = Math.random() * 3 + 5 + 's';
-            column.style.animationDelay = Math.random() * 2 + 's';
-            
-            const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
-            let text = '';
-            for (let i = 0; i < 20; i++) {
-                text += chars[Math.floor(Math.random() * chars.length)] + '<br>';
-            }
-            column.innerHTML = text;
-            
-            return column;
-        }
-        
-        function initMatrixBackground() {
-            const matrixBg = document.getElementById('matrixBg');
-            for (let i = 0; i < 10; i++) {
-                setTimeout(() => {
-                    matrixBg.appendChild(createMatrixColumn());
-                }, i * 500);
-            }
-            
-            // Add new columns periodically
-            setInterval(() => {
-                if (matrixBg.children.length < 15) {
-                    matrixBg.appendChild(createMatrixColumn());
-                }
-            }, 3000);
-        }
-        
-        // Typing animation
-        function typeWriter(element, text, speed = 50) {
-            let i = 0;
-            element.innerHTML = '';
-            
-            function type() {
-                if (i < text.length) {
-                    element.innerHTML += text.charAt(i);
-                    i++;
-                    setTimeout(type, speed);
-                }
-            }
-            
-            type();
-        }
-        
-        // Initialize animations
-        document.addEventListener('DOMContentLoaded', function() {
-            initCodeBackground();
-            initMatrixBackground();
-            
-            // Stagger fade-in animations
-            const fadeElements = document.querySelectorAll('.fade-in');
-            fadeElements.forEach((el, index) => {
-                el.style.animationDelay = (index * 0.3) + 's';
-            });
-            
-            // Clean up old animation elements
-            setInterval(() => {
-                const codeLines = document.querySelectorAll('.code-line');
-                codeLines.forEach(line => {
-                    if (line.getBoundingClientRect().right < 0) {
-                        line.remove();
-                    }
-                });
-                
-                const matrixColumns = document.querySelectorAll('.matrix-column');
-                matrixColumns.forEach(column => {
-                    if (column.getBoundingClientRect().top > window.innerHeight) {
-                        column.remove();
-                    }
-                });
-            }, 5000);
-        });
-        
-        // Add some interactive effects
-        document.addEventListener('mousemove', function(e) {
-            const cursor = document.querySelector('.cursor');
-            if (!cursor) {
-                const newCursor = document.createElement('div');
-                newCursor.className = 'cursor';
-                newCursor.style.cssText = `
-                    position: fixed;
-                    width: 20px;
-                    height: 20px;
-                    border: 2px solid #00ff41;
-                    border-radius: 50%;
-                    pointer-events: none;
-                    z-index: 9999;
-                    opacity: 0.5;
-                    transition: transform 0.1s ease;
-                `;
-                document.body.appendChild(newCursor);
-            }
-            
-            const cursorElement = document.querySelector('.cursor');
-            cursorElement.style.left = e.clientX - 10 + 'px';
-            cursorElement.style.top = e.clientY - 10 + 'px';
-        });
-    </script>
 </body>
 </html>
